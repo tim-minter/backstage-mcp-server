@@ -29,7 +29,7 @@ docker run -e BACKSTAGE_BEARER_TOKEN=your_token_here -e BACKSTAGE_API_BASE=https
 
 The server requires the following environment variables:
 
-- `BACKSTAGE_API_BASE` (optional): Base URL for your Backstage API catalog endpoint. Defaults to `https://backstage.mintel.cloud/API/catalog`
+- `BACKSTAGE_API_BASE` (optional): Base URL for your Backstage API catalog endpoint. 
 - `BACKSTAGE_BEARER_TOKEN` (optional): Bearer token for Backstage API authentication
 
 ## Tools
