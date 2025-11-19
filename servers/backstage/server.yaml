@@ -12,7 +12,7 @@ about:
   description: Interact with Backstage software catalog - list entities, get entity details, and view ancestry information
   icon: https://backstage.io/img/logo.svg
 source:
-  project: https://github.com/YOUR_USERNAME/backstage-mcp-server
+  project: https://github.com/timminter/backstage-mcp-server
   commit: # Will be filled by the registry tooling
 config:
   description: Configure the connection to your Backstage instance
