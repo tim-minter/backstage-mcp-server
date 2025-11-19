@@ -1,0 +1,35 @@
+name: backstage
+image: mcp/backstage
+type: server
+meta:
+  category: developer-tools
+  tags:
+    - backstage
+    - catalog
+    - developer-tools
+about:
+  title: Backstage MCP Server
+  description: Interact with Backstage software catalog - list entities, get entity details, and view ancestry information
+  icon: https://backstage.io/img/logo.svg
+source:
+  project: https://github.com/YOUR_USERNAME/backstage-mcp-server
+  commit: # Will be filled by the registry tooling
+config:
+  description: Configure the connection to your Backstage instance
+  secrets:
+    - name: backstage.bearer_token
+      env: BACKSTAGE_BEARER_TOKEN
+      example: <YOUR_BACKSTAGE_BEARER_TOKEN>
+  env:
+    - name: BACKSTAGE_API_BASE
+      example: https://backstage.example.com/API/catalog
+      value: '{{backstage.api_base}}'
+  parameters:
+    type: object
+    properties:
+      api_base:
+        type: string
+        description: Base URL for your Backstage API catalog endpoint
+    required:
+      - api_base
+

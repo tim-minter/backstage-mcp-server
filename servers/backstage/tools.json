@@ -1,0 +1,77 @@
+[
+  {
+    "name": "list_entities",
+    "description": "List entities in Backstage, optionally filtered by kind and namespace",
+    "arguments": [
+      {
+        "name": "kind",
+        "type": "string",
+        "desc": "Optional entity kind filter (e.g., 'Component', 'API', 'System')"
+      },
+      {
+        "name": "namespace",
+        "type": "string",
+        "desc": "Optional namespace filter"
+      },
+      {
+        "name": "limit",
+        "type": "integer",
+        "desc": "Maximum number of entities to return (default: 10)"
+      }
+    ]
+  },
+  {
+    "name": "get_entity",
+    "description": "Get a Backstage entity by kind, namespace, and name",
+    "arguments": [
+      {
+        "name": "kind",
+        "type": "string",
+        "desc": "Entity kind (e.g., 'Component', 'API', 'System')"
+      },
+      {
+        "name": "namespace",
+        "type": "string",
+        "desc": "Entity namespace"
+      },
+      {
+        "name": "name",
+        "type": "string",
+        "desc": "Entity name"
+      }
+    ]
+  },
+  {
+    "name": "get_entity_ancestry",
+    "description": "Get ancestry information for a Backstage entity",
+    "arguments": [
+      {
+        "name": "kind",
+        "type": "string",
+        "desc": "Entity kind"
+      },
+      {
+        "name": "namespace",
+        "type": "string",
+        "desc": "Entity namespace"
+      },
+      {
+        "name": "name",
+        "type": "string",
+        "desc": "Entity name"
+      }
+    ]
+  },
+  {
+    "name": "set_bearer_token",
+    "description": "Set the bearer token for Backstage API requests",
+    "arguments": [
+      {
+        "name": "token",
+        "type": "string",
+        "desc": "Bearer token for Backstage API authentication"
+      }
+    ]
+  }
+]
+
